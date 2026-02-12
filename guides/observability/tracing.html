@@ -21,9 +21,9 @@
 <meta content="#ffffff" media="(prefers-color-scheme: light)" name="theme-color"/>
 <meta content="#030711" media="(prefers-color-scheme: dark)" name="theme-color"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Tracing | Plano Docs v0.4.4</title>
-<meta content="Tracing | Plano Docs v0.4.4" property="og:title"/>
-<meta content="Tracing | Plano Docs v0.4.4" name="twitter:title"/>
+<title>Tracing | Plano Docs v0.4.6</title>
+<meta content="Tracing | Plano Docs v0.4.6" property="og:title"/>
+<meta content="Tracing | Plano Docs v0.4.6" name="twitter:title"/>
 <link href="../../_static/pygments.css?v=73db4dac" rel="stylesheet" type="text/css"/>
 <link href="../../_static/theme.css?v=73505e79" rel="stylesheet" type="text/css"/>
 <link href="../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
@@ -41,7 +41,7 @@
     </a><header class="sticky top-0 z-40 w-full border-b shadow-xs border-border bg-background/90 backdrop-blur"><div class="container flex items-center h-14">
 <div class="hidden mr-4 md:flex">
 <a class="flex items-center mr-6" href="../../index.html">
-<img alt="Logo" class="mr-2 dark:invert" height="24" src="../../_static/favicon.ico" width="24"/><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Plano Docs v0.4.4</span>
+<img alt="Logo" class="mr-2 dark:invert" height="24" src="../../_static/favicon.ico" width="24"/><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Plano Docs v0.4.6</span>
 </a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
 <svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
@@ -77,7 +77,7 @@
 </header>
 <div class="flex-1"><div class="container md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
 <a class="justify-start text-sm md:!hidden bg-background" href="../../index.html">
-<img alt="Logo" class="mr-2 dark:invert" height="16" src="../../_static/favicon.ico" width="16"/><span class="font-bold text-clip whitespace-nowrap">Plano Docs v0.4.4</span>
+<img alt="Logo" class="mr-2 dark:invert" height="16" src="../../_static/favicon.ico" width="16"/><span class="font-bold text-clip whitespace-nowrap">Plano Docs v0.4.6</span>
 </a>
 <div class="relative overflow-hidden md:overflow-auto my-4 md:my-0">
 <div class="overflow-y-auto h-full w-full relative pr-6">
@@ -151,7 +151,7 @@
 <div class="w-full min-w-0 mx-auto">
 <nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
 <a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="../../index.html">
-<span class="hidden md:inline">Plano Docs v0.4.4</span>
+<span class="hidden md:inline">Plano Docs v0.4.6</span>
 <svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
 <path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
 </svg>
@@ -312,6 +312,81 @@ making it easy to visualize traces in the tools you’re already usi</p></li>
 <li><p><strong>Sampling Policy</strong>: The 100 in <code class="docutils literal notranslate"><span class="pre">random_sampling:</span> <span class="pre">100</span></code> means that all the requests as sampled for tracing.
 You can adjust this value from 0-100.</p></li>
 </ol>
+</section>
+<section id="tracing-with-the-cli">
+<h2>Tracing with the CLI<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#tracing-with-the-cli" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#tracing-with-the-cli'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<p>The Plano CLI ships with a local OTLP/gRPC listener and a trace viewer so you can inspect spans without wiring a full observability backend. This is ideal for development, debugging, and quick QA.</p>
+<section id="quick-start">
+<h3>Quick Start<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#quick-start" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#quick-start'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<p>You can enable tracing in either of these ways:</p>
+<ol class="arabic simple">
+<li><p>Start the local listener explicitly:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>listen
+</span></code></pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Or start Plano with tracing enabled (auto-starts the local OTLP listener):</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>up<span class="w"> </span>--with-tracing
+</span><span id="line-2">
+</span><span id="line-3"><span class="gp"># </span>Optional:<span class="w"> </span>choose<span class="w"> </span>a<span class="w"> </span>different<span class="w"> </span>listener<span class="w"> </span>port
+</span><span id="line-4"><span class="gp">$ </span>planoai<span class="w"> </span>up<span class="w"> </span>--with-tracing<span class="w"> </span>--tracing-port<span class="w"> </span><span class="m">4318</span>
+</span></code></pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Send requests through Plano as usual. The listener accepts OTLP/gRPC on:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">0.0.0.0:4317</span></code> (default)</p></li>
+</ul>
+</li>
+<li><p>View the most recent trace:</p></li>
+</ol>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace
+</span></code></pre></div>
+</div>
+</section>
+<section id="inspect-and-filter-traces">
+<h3>Inspect and Filter Traces<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#inspect-and-filter-traces" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#inspect-and-filter-traces'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<p>List available trace IDs:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--list
+</span></code></pre></div>
+</div>
+<p>Open a specific trace (full or short trace ID):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>7f4e9a1c
+</span><span id="line-2"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>7f4e9a1c0d9d4a0bb9bf5a8a7d13f62a
+</span></code></pre></div>
+</div>
+<p>Filter by attributes and time window:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--where<span class="w"> </span>llm.model<span class="o">=</span>gpt-4o-mini<span class="w"> </span>--since<span class="w"> </span>30m
+</span><span id="line-2"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--filter<span class="w"> </span><span class="s2">"http.*"</span><span class="w"> </span>--limit<span class="w"> </span><span class="m">5</span>
+</span></code></pre></div>
+</div>
+<p>Return JSON for automation:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--json
+</span><span id="line-2"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--list<span class="w"> </span>--json
+</span></code></pre></div>
+</div>
+<p>Show full span attributes (disable default compact view):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--verbose
+</span><span id="line-2"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>-v
+</span></code></pre></div>
+</div>
+<p>Point the CLI at a different local listener port:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span><span class="nb">export</span><span class="w"> </span><span class="nv">PLANO_TRACE_PORT</span><span class="o">=</span><span class="m">50051</span>
+</span><span id="line-2"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>--list
+</span></code></pre></div>
+</div>
+</section>
+<section id="notes">
+<h3>Notes<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#notes" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#notes'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--where</span></code> accepts repeatable <code class="docutils literal notranslate"><span class="pre">key=value</span></code> filters and uses AND semantics.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--filter</span></code> supports wildcards (<code class="docutils literal notranslate"><span class="pre">*</span></code>) to limit displayed attributes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--no-interactive</span></code> disables prompts when listing traces.</p></li>
+<li><p>By default, inbound/outbound spans use a compact attribute view.</p></li>
+</ul>
+</section>
 </section>
 <section id="trace-propagation">
 <h2>Trace Propagation<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#trace-propagation" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#trace-propagation'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
@@ -533,6 +608,54 @@ tools like AWS X-Ray and Datadog, enhancing observability and facilitating faste
 </section>
 <section id="additional-resources">
 <h2>Additional Resources<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#additional-resources" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#additional-resources'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h2>
+<section id="cli-reference">
+<h3>CLI Reference<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#cli-reference" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#cli-reference'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">planoai</span> <span class="pre">trace</span></code></dt><dd><p>Trace requests captured by the local OTLP listener.</p>
+<p><strong>Synopsis</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span><span class="o">[</span>TARGET<span class="o">]</span><span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</span></code></pre></div>
+</div>
+<p><strong>Targets</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">last</span></code> (default): show the most recent trace.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">any</span></code>: allow interactive selection when available.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;trace-id&gt;</span></code>: full 32-hex trace ID.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;short-id&gt;</span></code>: first 8 hex characters.</p></li>
+</ul>
+<p><strong>Options</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--filter</span> <span class="pre">&lt;pattern&gt;</span></code>: limit displayed attributes to matching keys (supports <code class="docutils literal notranslate"><span class="pre">*</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--where</span> <span class="pre">&lt;key=value&gt;</span></code>: match traces containing a specific attribute (repeatable, AND).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--list</span></code>: list trace IDs only.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--no-interactive</span></code>: disable interactive prompts/selections.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--limit</span> <span class="pre">&lt;n&gt;</span></code>: limit the number of traces returned.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--since</span> <span class="pre">&lt;window&gt;</span></code>: look back window (<code class="docutils literal notranslate"><span class="pre">5m</span></code>, <code class="docutils literal notranslate"><span class="pre">2h</span></code>, <code class="docutils literal notranslate"><span class="pre">1d</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--json</span></code>: output raw JSON instead of formatted output.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--verbose,</span> <span class="pre">-v</span></code>: show all span attributes. By default, inbound/outbound
+spans are displayed in a compact view.</p></li>
+</ul>
+<p><strong>Environment</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PLANO_TRACE_PORT</span></code>: gRPC port used by <code class="docutils literal notranslate"><span class="pre">planoai</span> <span class="pre">trace</span></code> to query traces
+(defaults to <code class="docutils literal notranslate"><span class="pre">4317</span></code>).</p></li>
+</ul>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">planoai</span> <span class="pre">trace</span> <span class="pre">listen</span></code></dt><dd><p>Start a local OTLP/gRPC listener.</p>
+<p><strong>Synopsis</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="gp">$ </span>planoai<span class="w"> </span>trace<span class="w"> </span>listen<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</span></code></pre></div>
+</div>
+<p><strong>Options</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--host</span> <span class="pre">&lt;host&gt;</span></code>: bind address (default: <code class="docutils literal notranslate"><span class="pre">0.0.0.0</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--port</span> <span class="pre">&lt;port&gt;</span></code>: gRPC listener port (default: <code class="docutils literal notranslate"><span class="pre">4317</span></code>).</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="external-references">
+<h3>External References<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link to this element'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link to this element" href="#external-references" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#external-references'"><svg height="1em" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a></h3>
 <ul class="simple">
 <li><p><a class="reference external" href="https://opentelemetry.io/docs/" rel="nofollow noopener">OpenTelemetry Documentation<svg fill="currentColor" height="1em" stroke="none" viewbox="0 96 960 960" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M188 868q-11-11-11-28t11-28l436-436H400q-17 0-28.5-11.5T360 336q0-17 11.5-28.5T400 296h320q17 0 28.5 11.5T760 336v320q0 17-11.5 28.5T720 696q-17 0-28.5-11.5T680 656V432L244 868q-11 11-28 11t-28-11Z"></path></svg></a></p></li>
 <li><p><a class="reference external" href="https://www.w3.org/TR/trace-context/" rel="nofollow noopener">W3C Trace Context Specification<svg fill="currentColor" height="1em" stroke="none" viewbox="0 96 960 960" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M188 868q-11-11-11-28t11-28l436-436H400q-17 0-28.5-11.5T360 336q0-17 11.5-28.5T400 296h320q17 0 28.5 11.5T760 336v320q0 17-11.5 28.5T720 696q-17 0-28.5-11.5T680 656V432L244 868q-11 11-28 11t-28-11Z"></path></svg></a></p></li>
@@ -544,6 +667,7 @@ tools like AWS X-Ray and Datadog, enhancing observability and facilitating faste
 <p class="admonition-title">Note</p>
 <p>Replace placeholders such as <code class="docutils literal notranslate"><span class="pre">&lt;Your-Aws-Region&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;Your-Datadog-Api-Key&gt;</span></code> with your actual configurations.</p>
 </div>
+</section>
 </section>
 </section>
 </div><div class="flex justify-between items-center pt-6 mt-12 border-t border-border gap-4">
@@ -578,6 +702,12 @@ tools like AWS X-Ray and Datadog, enhancing observability and facilitating faste
 <li><a :data-current="activeSection === '#behavioral-signals-in-traces'" class="reference internal" href="#behavioral-signals-in-traces">Behavioral Signals in Traces</a></li>
 <li><a :data-current="activeSection === '#benefits-of-using-traceparent-headers'" class="reference internal" href="#benefits-of-using-traceparent-headers">Benefits of Using <code class="docutils literal notranslate"><span class="pre">Traceparent</span></code> Headers</a></li>
 <li><a :data-current="activeSection === '#how-to-initiate-a-trace'" class="reference internal" href="#how-to-initiate-a-trace">How to Initiate A Trace</a></li>
+<li><a :data-current="activeSection === '#tracing-with-the-cli'" class="reference internal" href="#tracing-with-the-cli">Tracing with the CLI</a><ul>
+<li><a :data-current="activeSection === '#quick-start'" class="reference internal" href="#quick-start">Quick Start</a></li>
+<li><a :data-current="activeSection === '#inspect-and-filter-traces'" class="reference internal" href="#inspect-and-filter-traces">Inspect and Filter Traces</a></li>
+<li><a :data-current="activeSection === '#notes'" class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
 <li><a :data-current="activeSection === '#trace-propagation'" class="reference internal" href="#trace-propagation">Trace Propagation</a><ul>
 <li><a :data-current="activeSection === '#header-format'" class="reference internal" href="#header-format">Header Format</a></li>
 <li><a :data-current="activeSection === '#instrumentation'" class="reference internal" href="#instrumentation">Instrumentation</a><ul>
@@ -594,7 +724,11 @@ tools like AWS X-Ray and Datadog, enhancing observability and facilitating faste
 </li>
 <li><a :data-current="activeSection === '#best-practices'" class="reference internal" href="#best-practices">Best Practices</a></li>
 <li><a :data-current="activeSection === '#summary'" class="reference internal" href="#summary">Summary</a></li>
-<li><a :data-current="activeSection === '#additional-resources'" class="reference internal" href="#additional-resources">Additional Resources</a></li>
+<li><a :data-current="activeSection === '#additional-resources'" class="reference internal" href="#additional-resources">Additional Resources</a><ul>
+<li><a :data-current="activeSection === '#cli-reference'" class="reference internal" href="#cli-reference">CLI Reference</a></li>
+<li><a :data-current="activeSection === '#external-references'" class="reference internal" href="#external-references">External References</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </aside>
@@ -603,12 +737,12 @@ tools like AWS X-Ray and Datadog, enhancing observability and facilitating faste
 </div><footer class="py-6 border-t border-border md:py-0">
 <div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
 <div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2025, Katanemo Labs, Inc Last updated: Feb 05, 2026. </p>
+<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2025, Katanemo Labs, Inc Last updated: Feb 12, 2026. </p>
 </div>
 </div>
 </footer>
 </div>
-<script src="../../_static/documentation_options.js?v=2dc42696"></script>
+<script src="../../_static/documentation_options.js?v=e45b861e"></script>
 <script src="../../_static/doctools.js?v=9bcbadda"></script>
 <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
 <script defer="defer" src="../../_static/theme.js?v=582b20c5"></script>
